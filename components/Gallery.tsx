@@ -5,29 +5,21 @@ import Image from "next/image";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80",
+    src: "/1.png",
     alt: "Mesa elegante decorada para celebración"
   },
   {
-    src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=80",
+    src: "/2.png",
     alt: "Salón de fiesta con luces cálidas"
   },
   {
-    src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80",
+    src: "/3.png",
     alt: "Detalle de celebración con flores"
   },
   {
-    src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80",
+    src: "/4.png",
     alt: "Brindis de invitados en fiesta"
   },
-  {
-    src: "https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?auto=format&fit=crop&w=900&q=80",
-    alt: "Vestido elegante en evento especial"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80",
-    alt: "Luces decorativas de fiesta"
-  }
 ];
 
 export default function Gallery() {
@@ -53,7 +45,7 @@ export default function Gallery() {
           {galleryImages.map((image, index) => (
             <motion.div
               key={image.src}
-              className="group relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-silver"
+              className="group relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-glow"
               initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}

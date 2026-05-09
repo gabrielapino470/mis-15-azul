@@ -62,10 +62,32 @@ export default function Hero() {
         <h1 className="font-display text-6xl font-semibold leading-none text-white drop-shadow-2xl sm:text-7xl md:text-8xl">
           Azul Pistoni
         </h1>
-        <div className="mx-auto my-8 h-px w-32 bg-gradient-to-r from-transparent via-silver to-transparent" />
-        <p className="font-display text-3xl text-silver sm:text-4xl">
-          9 de mayo
+        <div className="mx-auto my-7 h-px w-32 bg-gradient-to-r from-transparent via-silver to-transparent" />
+        <p className="font-display text-3xl leading-snug text-silver sm:text-4xl">
+          Sábado 9 de mayo
         </p>
+        <p className="mx-auto mt-8 max-w-md text-base leading-relaxed text-silver/90 sm:text-lg">
+          Hoy celebro rodeada del cariño de quienes hacen brillar mi mundo. Esta
+          noche queda grabada en el corazón, y cada momento compartido con vos es
+          un regalo.
+        </p>
+        <p className="mx-auto mt-4 max-w-md text-base leading-relaxed text-silver/80 sm:text-lg">
+          Si capturaste una sonrisa, un abrazo o un baile, subí tus fotos y videos:
+          así armamos entre todos el álbum de un recuerdo que no queremos olvidar.
+        </p>
+        <motion.div
+          className="mt-10 flex flex-wrap items-center justify-center gap-4"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.45, duration: 0.6, ease: "easeOut" }}
+        >
+          <a
+            href="#subir-recuerdos"
+            className="inline-flex min-h-14 items-center justify-center rounded-full bg-gradient-to-r from-blue-300 via-silver to-white px-9 py-4 text-base font-semibold text-midnight shadow-glow transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300 sm:min-h-[3.75rem] sm:px-12 sm:text-lg"
+          >
+            Compartí fotos y videos
+          </a>
+        </motion.div>
       </motion.div>
     </section>
   );

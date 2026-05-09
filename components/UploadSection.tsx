@@ -5,7 +5,10 @@ import UploadButton from "./UploadButton";
 
 export default function UploadSection() {
   return (
-    <section className="relative px-6 py-24 sm:py-32">
+    <section
+      id="subir-recuerdos"
+      className="relative scroll-mt-8 px-6 py-24 sm:py-32"
+    >
       <div className="absolute inset-x-0 top-1/2 h-64 -translate-y-1/2 bg-gradient-to-r from-transparent via-blue-500/10 to-transparent blur-3xl" />
       <motion.div
         className="relative mx-auto max-w-4xl rounded-[2.25rem] border border-white/10 bg-gradient-to-br from-white/[0.12] via-white/[0.07] to-blue-400/[0.08] px-7 py-12 text-center shadow-glow backdrop-blur-lg sm:px-12 sm:py-16"
